@@ -41,19 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public void showUpButton() {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    public void hideUpButton() {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-    }
-
     @Override
     public void onBackPressed() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        if (fragmentManager.getBackStackEntryCount() > 1) {
-            fragmentManager.popBackStackImmediate();
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
         } else {
             super.onBackPressed();
         }

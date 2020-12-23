@@ -44,7 +44,7 @@ public class AdapterContent extends RecyclerView.Adapter<AdapterContent.ViewHold
             public void onClick(View v) {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.nav_host_fragment, fragments.get(position));
-                transaction.commit();
+                transaction.addToBackStack(null).commit();
             }
         });
     }

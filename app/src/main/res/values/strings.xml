@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">Internet Marketing</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Internet Marketing</string>
+    <string name="app_name">Интернет-маркетинг</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="nav_header_title">Интернет-маркетинг</string>
     <string name="nav_header_subtitle"> </string>
     <string name="nav_header_desc">Navigation header</string>
 
-    <string name="menu_content">Content</string>
-    <string name="menu_favorite">Favorites</string>
-    <string name="menu_settings">Settings</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_communicate">Communicate</string>
-    <string name="content_item_dummy">Content</string>
+    <string name="menu_content">Содержание</string>
+    <string name="menu_favorite">Избранное</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_communicate">Поддержка</string>
+    <string name="content_item_dummy">Содержание</string>
     <string name="frame_1_title">Что такое интернет-маркетинг?</string>
     <string name="frame_1_text_1">Интернет-маркетинг — это знания (навыки), которые помогают работать с электронными каналами (SEO, SMM, контекстная реклама) и привлекать клиентов из интернета. Где увеличить бюджет, как правильно посчитать доходность каждого потока трафика на сайт.</string>
     <string name="frame_1_text_2">Сейчас интернет-маркетинг — это о прибыли и принятии решений о той или иной рекламе.</string>
@@ -28,7 +28,7 @@
     <string name="frame_2_text_10">С определенной периодичностью возвращайтесь к пересмотру сайтов-конкурентов для поиска новых фишек, товаров, услуг, гарантий.</string>
     <string name="frame_2_text_11">Создаем сайт</string>
     <string name="frame_2_text_12">Создаем сайт визитку или интернет-магазин. Можно начать с конструктора сайтов, это в разы быстрее и дешевле. Сайт уже будет оптимизирован под мобильные устройства, быструю загрузку страниц и оплату пластиковыми карточками.</string>
-    <string name="frame_2_text_13">И вы течение 2-5 дней после разработки получите первые заказы. Сначала купите домен и привяжите к конструктору сайтов:</string>
+    <string name="frame_2_text_13">И вы течение 2–5 дней после разработки получите первые заказы. Сначала купите домен и привяжите к конструктору сайтов:</string>
     <string name="frame_2_text_14">Привязка домена поспособствует продвижению, запоминаемости и в будущем упростит возможный перенос сайта на собственную CMS. Прикупить домен можно по ссылке https://www.reg.ru/</string>
     <string name="frame_2_text_15">Добавьте больше отзывов клиентов, кейсов, цифр. Важно вызывать доверие у потенциального клиента и создать ценность продукта.</string>
     <string name="frame_2_text_16">Настройка целей</string>

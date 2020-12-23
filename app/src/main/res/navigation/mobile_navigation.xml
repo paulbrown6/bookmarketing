@@ -9,7 +9,8 @@
         android:id="@+id/nav_content"
         android:name="com.pb.app.bookmarketing.ui.content.ContentFragment"
         android:label="@string/menu_content"
-        tools:layout="@layout/fragment_content" />
+        tools:layout="@layout/fragment_content" >
+    </fragment>
 
     <fragment
         android:id="@+id/nav_favorite"
