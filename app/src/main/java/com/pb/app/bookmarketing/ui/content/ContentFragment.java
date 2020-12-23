@@ -44,6 +44,7 @@ public class ContentFragment extends Fragment {
         fragments.add(new Fragment(R.layout.frame_4));
         fragments.add(new Fragment(R.layout.frame_5));
         fragments.add(new Fragment(R.layout.frame_6));
+        fragments.add(new Fragment(R.layout.frame_7));
         adapter = new AdapterContent(items, getFragmentManager(), fragments);
         recyclerView.setAdapter(adapter);
         return root;
