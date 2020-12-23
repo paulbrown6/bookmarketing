@@ -1,14 +1,14 @@
-package com.pb.app.bookmarketing.ui.home;
+package com.pb.app.bookmarketing.ui.content;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class ContentViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ContentViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }

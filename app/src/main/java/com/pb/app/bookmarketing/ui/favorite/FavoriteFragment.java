@@ -1,28 +1,25 @@
-package com.pb.app.bookmarketing.ui.gallery;
+package com.pb.app.bookmarketing.ui.favorite;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.pb.app.bookmarketing.R;
 
-public class GalleryFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private FavoriteViewModel favoriteViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        favoriteViewModel =
+                new ViewModelProvider(this).get(FavoriteViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_favorite, container, false);
 //        final TextView textView = root.findViewById(R.id.text_gallery);
 //        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 //            @Override

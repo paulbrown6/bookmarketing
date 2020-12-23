@@ -5,9 +5,32 @@
     <string name="nav_header_title">Internet Marketing</string>
     <string name="nav_header_subtitle"> </string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_content">Content</string>
+    <string name="menu_favorite">Favorites</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_communicate">Communicate</string>
+    <string name="content_item_dummy">Content</string>
+    <string name="frame_1_title">Что такое интернет-маркетинг?</string>
+    <string name="frame_1_text_1">Интернет-маркетинг — это знания (навыки), которые помогают работать с электронными каналами (SEO, SMM, контекстная реклама) и привлекать клиентов из интернета. Где увеличить бюджет, как правильно посчитать доходность каждого потока трафика на сайт.</string>
+    <string name="frame_1_text_2">Сейчас интернет-маркетинг — это о прибыли и принятии решений о той или иной рекламе.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frame_2_title">Как создать бизнес в интернете? Изучаем конкурентов</string>
+    <string name="frame_2_text_1">Прежде чем создавать сайт рекомендуется изучить всех конкурентов в интернете в вашем регионе. Например ниша: строительство каркасных домов в Москве. Изучаем конкурентов: прямых и косвенных и выписываем преимущества и недостатки.</string>
+    <string name="frame_2_text_2">Находим сайты-конкуренты с помощью сервиса seranking.com</string>
+    <string name="frame_2_text_3">Переходим на каждый из сайтов и внимательно изучаем уникальное торговое предложение (УТП) и структуру сайтов:</string>
+    <string name="frame_2_text_4">Сокращенный пример анализа компания Теремъ - https://www.terem-pro.ru</string>
+    <string name="frame_2_text_5">Выводы: лучше начинать с одной категории: дома, бани или беседки, обязательно наличие офлайн выставки. Нужно четкое понимание товара-локомотива, цен, гарантий, подключение банков-партнеров для использования рассрочек и акций.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="content_items">
+        <item>1. Интернет-маркетинг</item>
+        <item>2. Как создать бизнес в интернете? Изучаем конкурентов</item>
+        <item>3. SEO</item>
+        <item>4. Контекст</item>
+        <item>5. SMM</item>
+        <item>6. Контент-маркетинг</item>
+        <item>7. Аналитика</item>
+    </string-array>
 </resources>
