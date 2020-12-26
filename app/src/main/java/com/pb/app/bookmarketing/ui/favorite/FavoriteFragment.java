@@ -8,25 +8,32 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.pb.app.bookmarketing.R;
+import com.pb.app.bookmarketing.data.favorite.FavoriteEntity;
+import com.pb.app.bookmarketing.ui.adapters.AdapterContent;
+
+import java.util.ArrayList;
 
 public class FavoriteFragment extends Fragment {
 
     private FavoriteViewModel favoriteViewModel;
+    private AdapterContent adapter;
+    private RecyclerView recyclerView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         favoriteViewModel =
                 new ViewModelProvider(this).get(FavoriteViewModel.class);
         View root = inflater.inflate(R.layout.fragment_favorite, container, false);
-//        final TextView textView = root.findViewById(R.id.text_gallery);
-//        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
+        recyclerView = root.findViewById(R.id.favorite_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        ArrayList<String> items = (ArrayList<String>) FavoriteEntity.getInstance().getFavorites();
+        ArrayList<Fragment> fragments = FavoriteEntity.getInstance().getFavoritesFragments();
+        adapter = new AdapterContent(items, getFragmentManager(), fragments);
+        recyclerView.setAdapter(adapter);
         return root;
     }
 }

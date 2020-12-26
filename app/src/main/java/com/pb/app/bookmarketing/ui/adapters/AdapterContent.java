@@ -13,7 +13,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pb.app.bookmarketing.MainActivity;
 import com.pb.app.bookmarketing.R;
+import com.pb.app.bookmarketing.data.favorite.FavoriteEntity;
 
 import java.util.List;
 
@@ -45,6 +47,13 @@ public class AdapterContent extends RecyclerView.Adapter<AdapterContent.ViewHold
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.replace(R.id.nav_host_fragment, fragments.get(position));
                 transaction.addToBackStack(null).commit();
+                MainActivity.getFavoriteButton().setVisibility(View.VISIBLE);
+                MainActivity.getShareButton().setVisibility(View.VISIBLE);
+                MainActivity.setCurrentFragment(post);
+                MainActivity.OnFavorite(FavoriteEntity.getInstance().isFavorite(post));
+                MainActivity.getActivity().getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                MainActivity.getActivity().getSupportActionBar().setDisplayShowTitleEnabled(false);
+                MainActivity.getBackButton().setVisibility(View.VISIBLE);
             }
         });
     }

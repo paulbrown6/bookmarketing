@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pb.app.bookmarketing.R;
+import com.pb.app.bookmarketing.data.favorite.FavoriteEntity;
 import com.pb.app.bookmarketing.ui.adapters.AdapterContent;
 
 import java.util.ArrayList;
@@ -29,7 +30,6 @@ public class ContentFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         contentViewModel = new ViewModelProvider(this).get(ContentViewModel.class);
-        setHasOptionsMenu(true);
         View root = inflater.inflate(R.layout.fragment_content, container, false);
         recyclerView = root.findViewById(R.id.content_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -37,14 +37,7 @@ public class ContentFragment extends Fragment {
         for(int i = 0; i < getResources().getStringArray(R.array.content_items).length; i++){
             items.add(getResources().getStringArray(R.array.content_items)[i]);
         }
-        ArrayList<Fragment> fragments = new ArrayList<>();
-        fragments.add(new Fragment(R.layout.frame_1));
-        fragments.add(new Fragment(R.layout.frame_2));
-        fragments.add(new Fragment(R.layout.frame_3));
-        fragments.add(new Fragment(R.layout.frame_4));
-        fragments.add(new Fragment(R.layout.frame_5));
-        fragments.add(new Fragment(R.layout.frame_6));
-        fragments.add(new Fragment(R.layout.frame_7));
+        ArrayList<Fragment> fragments = FavoriteEntity.getInstance().getAllFragments();
         adapter = new AdapterContent(items, getFragmentManager(), fragments);
         recyclerView.setAdapter(adapter);
         return root;
